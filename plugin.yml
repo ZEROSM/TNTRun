@@ -1,10 +1,13 @@
 name: TNTRun
 main: TNTRun\Main
-version: 1.0.0
-api: 3.0.0-ALPHA11
-author: BeckenPlayZMCPE
+version: 1.1.0
+api: 4.0.0
+author:
+- BeckenPlayZMCPE
+- MineDefenser
+
 commands:
-    tr:
-        usage: /tr <sub-command>
-        description: All Commands
-        permission: TNTRun.command
+ tr:
+   usage: /tr <addarena|regsign>
+   description: TNT Run 미니게임 명령어
+   permission: TNTRun.command
