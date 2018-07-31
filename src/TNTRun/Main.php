@@ -155,9 +155,9 @@ class Main extends PluginBase implements Listener {
                     $sender->sendMessage(TextFormat::RED . "사용법: " . $cmd->getUsage());
                     return true;
                 }
-                if (strtolower($args[0]) === "생성") { // /tr addarena <name> <maxPlayers> <minPlayers>
+                if (strtolower($args[0]) === "addarena") { // /tr addarena <name> <maxPlayers> <minPlayers>
                     if (!(isset($args[1])) || !(isset($args[2])) || !(isset($args[3]))) {
-                        $sender->sendMessage("사용법: /tr 생성 <월드 이름> <최대 플레이어> <최소 플레이어>");
+                        $sender->sendMessage("사용법: /tr addarena <월드 이름> <최대 플레이어> <최소 플레이어>");
                         return true;
                     }
                     if (file_exists($this->getServer()->getDataPath() . "/worlds/" . $args[1])) {
